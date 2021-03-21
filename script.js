@@ -39,4 +39,26 @@ const adjNode=document.createElement('p');
 const adjNodeContent=document.createTextNode('I was added using Adjacent Insertion')
 adjNode.appendChild(adjNodeContent)
 // Using adjacent insertion
-adjacentReference.insertAdjacentElement("af",adjNode)
+adjacentReference.insertAdjacentElement("beforeBegin",adjNode)
+
+// Inner HTML & Outer HTML
+function startAttack(){
+    const attackedInput=document.getElementById('attackedInput')
+const outerAttackedInput=attackedInput.outerHTML
+const innerAttackedInput=attackedInput.innerHTML
+console.log(`Puedo leer la siguiente cadena de texto ${outerAttackedInput}`)
+console.log(`Tambien su contenido ${innerAttackedInput}`)
+const insecureInput=outerAttackedInput.replace('placeholder="Do not share your personal information"','placeholder="Write your bank account please :)"')
+attackedInput.outerHTML=insecureInput
+console.log('Placeholder modificado')
+let attackedButton=document.querySelector('button')
+let outerAttackedButton=attackedButton.outerHTML
+let hackedButton=outerAttackedButton.replace('<button>','<button onclick="hack()">')
+attackedButton.outerHTML=hackedButton
+}
+
+function hack(){
+    let stolenAccount=document.getElementById('attackedInput').value
+    alert('Stolen account: '+stolenAccount)
+}
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,27 @@
     <title>DOM Manipultacion</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>DOM Manipultacion</header>
     <section class="appendChild">
-    <h1>I just have an h1, the rest was added using appendChild</h1>
+        <h1>I just have an h1, the rest was added using appendChild</h1>
     </section>
     <section class="append"></section>
     <section class="adjacent">
         <p id="adjRef">I am a reference for the adjacent insertion</p>
     </section>
+    <section id="innerOuter">
+        <p>This section not only explains how to use innerHTML & outerHTML but also<strong>🏴‍☠️☣ How to perform a XSS
+                attack🏴‍☠️☣</strong> dont forget to check the console</p>
+        <input id="attackedInput" type="text" placeholder="Do not share your personal information">
+        <button>Submit</button>
+    </section>
+    <div id="hack">
+        <button onclick="startAttack()">Attack NOW 😆</button>
+    </div>
 
     <script src="./script.js"></script>
 </body>
+
 </html>

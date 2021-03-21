@@ -32,3 +32,28 @@ header{
     border: 2px solid rgb(106, 250, 207);
     border-radius: 15px;
 }
+#innerOuter{ 
+    background-color:rgb(201, 201, 201);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 5px solid red;
+    border-radius: 15px;
+}
+#attackedInput{
+width: 30%;
+}
+#hack{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#hack button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
