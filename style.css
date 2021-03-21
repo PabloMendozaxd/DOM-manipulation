@@ -1,0 +1,34 @@
+body{
+    /* background: url('./assets/img/sphynx.jpg') center/cover; */
+  }
+header{
+    display: flex;
+    justify-content: center;
+}
+.appendChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.append{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid pink;
+    border-radius: 15px;
+
+}
+.adjacent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid rgb(106, 250, 207);
+    border-radius: 15px;
+}
